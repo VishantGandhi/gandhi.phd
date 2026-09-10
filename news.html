@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishant Gandhi | News</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm border-b border-slate-200 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-xl font-bold text-slate-900 tracking-tight">Gandhi.PhD</a>
+                </div>
+                <div class="hidden sm:flex sm:items-center sm:space-x-8">
+                    <a href="index.html" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition">Home</a>
+                    <a href="publications.html" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition">Publications</a>
+                    <a href="curriculum-vitae.html" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition">CV</a>
+                    <a href="news.html" class="text-sm font-medium text-brand-600 transition">News</a>
+                    <a href="contact-me.html" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition">Contact Me</a>
+                    <a href="http://localhost:8501" target="_blank" class="text-sm font-medium text-brand-600 hover:text-brand-700 transition flex items-center gap-2">
+                        <i class="fa-solid fa-flask text-xs"></i> Research Tools
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow pt-24 pb-12">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+            <h1 class="text-4xl font-extrabold text-slate-900 mb-6 border-b pb-4">News</h1>
+            
+            <p class="text-lg text-slate-600 mb-12 leading-relaxed">
+                Welcome to my news page, where I share updates on my work, media mentions, and research highlights from my lab. Here, you'll find articles featuring my research, and coverage of breakthroughs in our field. Stay connected to the latest developments in microbiome science, bioengineering, and beyond!
+            </p>
+            
+            <div class="space-y-12">
+                
+                <!-- 2026 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-brand-600 mb-6 flex items-center">
+                        <i class="fa-regular fa-calendar mr-3"></i> 2026
+                    </h2>
+                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=800&q=80" alt="Microbiome" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">
+                                <a href="https://engineering.berkeley.edu/news/2026/01/using-the-microbiome-to-combat-lung-pathogens/" target="_blank" class="hover:text-brand-600">Zengler Lab: PROTECT - A multidisciplinary collaboration</a>
+                            </h3>
+                            <p class="text-slate-800 mb-2">Ellery, Marni. <span class="italic">"Using the Microbiome to Combat Lung Pathogens."</span></p>
+                            <p class="text-slate-500 text-sm">Berkeley Engineering &middot; 13 Jan. 2026</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2025 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-brand-600 mb-6 flex items-center">
+                        <i class="fa-regular fa-calendar mr-3"></i> 2025
+                    </h2>
+                    <div class="grid gap-6">
+                        <div class="bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=800&q=80" alt="UC San Diego" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-slate-900 mb-2">
+                                    <a href="https://today.ucsd.edu/story/uc-san-diego-and-uc-system-rank-among-worlds-top-institutions-for-most-influential-researchers" target="_blank" class="hover:text-brand-600">Zengler Lab: 2025 Highly Cited Researchers</a>
+                                </h3>
+                                <p class="text-slate-800 mb-2">Bass, Debra. <span class="italic">"UC San Diego and UC System Rank among World’s Top Institutions for Most Influential Researchers."</span></p>
+                                <p class="text-slate-500 text-sm">UC San Diego Today &middot; 18 Nov. 2025</p>
+                            </div>
+                        </div>
+
+                        <!-- Tweet Embed -->
+                        <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden p-6">
+                            <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                                <i class="fa-brands fa-x-twitter"></i> Media Mentions & Events
+                            </h3>
+                            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Was great to see this AMAZING talk by Robert Quinn of <a href="https://x.com/Quinn_Labs?ref_src=twsrc%5Etfw">@Quinn_Labs</a> here at UCSD. This talk included a history of the discovery of amine conjugated bile acids, the enzymology behind them, and their impact on health and disease. <br>Some featured papers in his talk shared below: <a href="https://t.co/C3sCHWwh6G">pic.twitter.com/C3sCHWwh6G</a></p>&mdash; CMMC (@MicrobialCMMC) <a href="https://x.com/MicrobialCMMC/status/1890506575900516749?ref_src=twsrc%5Etfw">February 14, 2025</a></blockquote>
+                            <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2024 -->
+                <div>
+                    <h2 class="text-2xl font-bold text-brand-600 mb-6 flex items-center">
+                        <i class="fa-regular fa-calendar mr-3"></i> 2024
+                    </h2>
+                    <div class="grid gap-6">
+                        <div class="bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition overflow-hidden">
+                            <img src="https://today.ucsd.edu/news_uploads/_social/iStock-dragana991-teaser-1200x628.jpg" alt="ARPA-H" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-slate-900 mb-2">
+                                    <a href="https://today.ucsd.edu/story/7-million-from-arpa-h-to-tackle-lung-infections-through-innovative-probiotic-treatment" target="_blank" class="hover:text-brand-600">Zengler Lab: ARPA-H UC San Diego Today</a>
+                                </h3>
+                                <p class="text-slate-800 mb-2">Lopez, Lizelda. <span class="italic">"$7 Million from ARPA-H to Tackle Lung Infections through Innovative Probiotic Treatment."</span></p>
+                                <p class="text-slate-500 text-sm">UC San Diego Today &middot; 10 Oct. 2024</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=800&q=80" alt="UC San Diego" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-slate-900 mb-2">
+                                    <a href="https://today.ucsd.edu/story/uc-san-diego-ranks-9th-in-the-world-for-most-influential-researchers" target="_blank" class="hover:text-brand-600">Zengler Lab: 2024 Highly Cited Researchers</a>
+                                </h3>
+                                <p class="text-slate-800 mb-2">Bass, Debra. <span class="italic">"UC San Diego Ranks 9th in the World for Most Influential Researchers."</span></p>
+                                <p class="text-slate-500 text-sm">UC San Diego Today &middot; 26 Nov. 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 mt-auto">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-white text-xl font-bold mb-4">Vishant Gandhi</h2>
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="https://linkedin.com/in/vishant-gandhi" target="_blank" class="hover:text-brand-500 transition text-2xl"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://scholar.google.com/citations?user=8sO2ZYgAAAAJ&hl=en&oi=ao" target="_blank" class="hover:text-brand-500 transition text-2xl"><i class="fa-solid fa-graduation-cap"></i></a>
+                <a href="http://zenglerlab.com" target="_blank" class="hover:text-brand-500 transition text-2xl"><i class="fa-solid fa-flask"></i></a>
+            </div>
+            <p class="mb-2"><i class="fa-solid fa-envelope mr-2"></i> vishant@gandhi.phd | vigandhi@ucsd.edu</p>
+            <p class="mb-8"><i class="fa-solid fa-location-dot mr-2"></i> 3147 Biomedical Sciences Way, La Jolla, CA 92093</p>
+            <div class="pt-8 border-t border-slate-800 text-sm">
+                <p>&copy; 2026 Vishant Gandhi. All rights reserved.</p>
+                <p class="mt-2 text-slate-500">Built with modern web standards.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

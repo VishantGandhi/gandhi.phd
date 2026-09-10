@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishant Gandhi | Contact Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .hero-pattern {
+            background-color: #ffffff;
+            background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm border-b border-slate-200 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-xl font-bold text-slate-900 tracking-tight">Gandhi.PhD</a>
+                </div>
+                <div class="hidden sm:flex sm:items-center sm:space-x-8">
+                    <a href="index.html" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition">Home</a>
+                    <a href="publications.html" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition">Publications</a>
+                    <a href="curriculum-vitae.html" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition">CV</a>
+                    <a href="news.html" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition">News</a>
+                    <a href="contact-me.html" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition">Contact Me</a>
+                    <a href="http://localhost:8501" target="_blank" class="text-sm font-medium text-brand-600 hover:text-brand-700 transition flex items-center gap-2">
+                        <i class="fa-solid fa-flask text-xs"></i> Research Tools
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow pt-24 pb-12">
+        
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+            <h1 class="text-4xl font-extrabold text-slate-900 mb-8 border-b pb-4">Contact Me</h1>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6">Get in Touch</h2>
+                    <p class="text-slate-600 mb-8">Whether you want to discuss microbiome therapeutics, venture capital in biotech, or just talk Formula 1, feel free to reach out!</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-10 h-10 bg-brand-50 text-brand-600 rounded-full flex items-center justify-center mt-1">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-sm font-medium text-slate-900">Email</p>
+                                <a href="mailto:vishant@gandhi.phd" class="text-brand-600 hover:underline block">vishant@gandhi.phd</a>
+                                <a href="mailto:vigandhi@ucsd.edu" class="text-brand-600 hover:underline block">vigandhi@ucsd.edu</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-10 h-10 bg-brand-50 text-brand-600 rounded-full flex items-center justify-center mt-1">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-sm font-medium text-slate-900">Lab Address</p>
+                                <p class="text-slate-600">3147 Biomedical Sciences Way<br>La Jolla, CA 92093</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-10 h-10 bg-brand-50 text-brand-600 rounded-full flex items-center justify-center mt-1">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-sm font-medium text-slate-900">LinkedIn</p>
+                                <a href="https://linkedin.com/in/vishant-gandhi" target="_blank" class="text-brand-600 hover:underline">Connect on LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                    <!-- Success Message -->
+                    <div data-fs-success class="hidden bg-green-50 border border-green-200 text-green-800 rounded-lg p-4 mb-4">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-circle-check text-green-500 mr-2"></i>
+                            <span class="font-medium">Thanks for reaching out! I'll get back to you soon.</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Global Error Message -->
+                    <div data-fs-error class="hidden bg-red-50 border border-red-200 text-red-800 rounded-lg p-4 mb-4"></div>
+
+                    <form id="contact-form" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-slate-700 mb-1">Name</label>
+                            <input type="text" id="name" name="name" data-fs-field required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none" placeholder="Your Name">
+                            <span data-fs-error="name" class="text-red-500 text-sm mt-1"></span>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-slate-700 mb-1">Email</label>
+                            <input type="email" id="email" name="email" data-fs-field required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none" placeholder="your@email.com">
+                            <span data-fs-error="email" class="text-red-500 text-sm mt-1"></span>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-slate-700 mb-1">Message</label>
+                            <textarea id="message" name="message" rows="4" data-fs-field required class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none" placeholder="How can I help you?"></textarea>
+                            <span data-fs-error="message" class="text-red-500 text-sm mt-1"></span>
+                        </div>
+                        <button type="submit" data-fs-submit-btn class="w-full bg-brand-600 text-white font-medium py-3 rounded-lg hover:bg-brand-700 transition shadow-sm disabled:opacity-50 disabled:cursor-not-allowed">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <!-- Formspree Script -->
+    <script>
+      window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+      formspree('initForm', { formElement: '#contact-form', formId: 'xyeylbln' });
+      
+      // Basic styling toggle for success/error divs
+      document.getElementById('contact-form').addEventListener('submit', function() {
+          const successDiv = document.querySelector('[data-fs-success]');
+          const errorDiv = document.querySelector('[data-fs-error]');
+          // Remove custom hidden classes when formspree SDK triggers display
+          const observer = new MutationObserver(function(mutations) {
+              mutations.forEach(function(mutation) {
+                  if(successDiv.style.display !== 'none' && successDiv.style.display !== '') {
+                      successDiv.classList.remove('hidden');
+                  }
+                  if(errorDiv.style.display !== 'none' && errorDiv.style.display !== '') {
+                      errorDiv.classList.remove('hidden');
+                  }
+              });
+          });
+          observer.observe(successDiv, { attributes: true, attributeFilter: ['style'] });
+          observer.observe(errorDiv, { attributes: true, attributeFilter: ['style'] });
+      });
+    </script>    
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 mt-auto">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-white text-xl font-bold mb-4">Vishant Gandhi</h2>
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="https://linkedin.com/in/vishant-gandhi" target="_blank" class="hover:text-brand-500 transition text-2xl"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://scholar.google.com/citations?user=8sO2ZYgAAAAJ&hl=en&oi=ao" target="_blank" class="hover:text-brand-500 transition text-2xl"><i class="fa-solid fa-graduation-cap"></i></a>
+                <a href="http://zenglerlab.com" target="_blank" class="hover:text-brand-500 transition text-2xl"><i class="fa-solid fa-flask"></i></a>
+            </div>
+            <p class="mb-2"><i class="fa-solid fa-envelope mr-2"></i> vishant@gandhi.phd | vigandhi@ucsd.edu</p>
+            <p class="mb-8"><i class="fa-solid fa-location-dot mr-2"></i> 3147 Biomedical Sciences Way, La Jolla, CA 92093</p>
+            <div class="pt-8 border-t border-slate-800 text-sm">
+                <p>&copy; 2026 Vishant Gandhi. All rights reserved.</p>
+                <p class="mt-2 text-slate-500">Built with modern web standards.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
